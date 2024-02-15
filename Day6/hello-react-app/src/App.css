@@ -1,0 +1,32 @@
+.App{
+  text-align: center;
+}
+
+h1{
+  color: maroon;
+  /* background-color: peachpuff; */
+}
+
+.makeCenter{
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 20px;
+}
+
+.makeRight{
+  text-align: right;
+  font-size: x-large;
+  color: peachpuff;
+  background-color: maroon;
+  margin: 20px;
+  width: 96%;
+}
+
+#simpleDiv{
+  width: 96%;
+  height: 500px;
+  border: 3px solid maroon;
+  text-align: center;
+  padding-top: 150px;
+  margin: 20px;
+}

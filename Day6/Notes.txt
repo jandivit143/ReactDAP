@@ -1,0 +1,69 @@
+on day 6:
+-> Lazy Loading implemented in 'cricket-routing-app' application
+-> @loadable/component implemented in 'cricket-routing-app' application
+-> form validations implemented in 'hello-react-app' application
+        => we can do our own form validations, check '01formvalidations.jsx' file
+                                        (or)
+        => we can make use of 'react-hook-form' module for the form validations as well
+        Benefits of using 'react-hook-form':
+            Simplifies the code
+            Performance - it uses uncontrolled components as it avoid re-rendering
+            Fewer re-renders
+            Faster development - you don't need to write much custom logic
+            Easier to test
+-> Flux
+    n -tier - 3 -tier
+    PL     BL     DAL
+
+    MVC Architecture pattern - Client Server Architecture
+
+    Model - Data Entity
+    View - Representation of Data
+    Controller - is the First class citizen. Request first of all handle by the controller.
+    Controller is responsible for pushing model's data to the view. Controller is responsible for
+    handling events associated with controls which are there on the view.
+
+    MVP - Model View Presenter - Thick client
+    
+    View and Presenter are tightly coupled
+
+    MVPM - PM - Presenter Model
+
+    MVVP - Model View and ViewModel - Support for data binding and commands
+
+    facebook - implemented using MVC
+
+    chat messenger pop ups when somebody sent you message
+
+    model - chat
+    view - chat popup
+    contrller - view
+
+    view - chat window
+
+    view - Chat Counter
+
+    facebook - architecture - Unidirectional Data Flow - Flux
+
+    Flux is architecture pattern - Unidirectional Data Flow
+
+    MVC
+    Action ----------> Controller ----------> Model <----------> View
+
+    FLUX - Unidirectional Data Flow
+    Action ----------> Dispatcher ----------> Store ----------> View
+                            ^                                      |
+                            |                                      V
+                            ----------------------------------- Action
+
+    Actions - Helper Methods that facilitates passing data to the dispatcher
+
+    Dispatcher - Receives actions and broadcasts payloads to store
+
+    Stores - Containers for application state and logic that have callbacks registered to the dispatcher
+
+    Controller Views/ Container Component - React components that grab the state from Stores and pass it
+    down to Presenter Views via props.
+
+    Presenter View - Represent the State / Dispaly the State
+-> Created one flux architecture followed application named 'Demo_Flux'

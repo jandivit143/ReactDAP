@@ -1,0 +1,29 @@
+on day 4:
+-> Convert LoginForm to work with only one state and that too of Object
+-> Parent Component to Child Component communication using instance method
+-> Passing data using props and context(check 01usingProps.jsx and 02usingContext.jsx files)
+-> Life cycle methods() - class component - real life example is while the end user watches a live video, user may get the
+   whatsapp notification
+   We have 3 phases:
+      Mounting - putting elements into the DOM
+      Updating - component is getting updated
+      Unmounting - component is being removed from the DOM
+
+   Initializing
+        Constructor
+
+   Mounting
+        getDerivedStateFromProps()
+        render()
+        componentDidMount()
+
+   Updating
+        getDerivedStateFromProps()
+        shouldComponentUpdate()
+        render()
+        getSnapshotBeforeUpdate()
+        componentDidUpdate()
+
+   Unmounting
+        componentWillUnmount()
+-> To make use of life cycle methods in functional components, we are gonna make use of react hook useEffect()

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.development.min.js"></script> -->
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        // Use 15.6.1 version of React
+        // Create a React Component
+        var Hello = React.createClass({
+            render: function(){
+                return React.createElement('h1',{'id':'hOne'},'Hello Universe - Using ES5!');
+            }
+        })
+
+        // Use 15.6.1 version of React
+        // Render a React Component on Virtual DOM
+        ReactDOM.render(React.createElement(Hello),document.getElementById('container'));
+    </script>
+</body>
+</html>

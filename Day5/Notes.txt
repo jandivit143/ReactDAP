@@ -1,0 +1,14 @@
+on day 5:
+-> SPA(Single Page Application)
+    react-router
+    react-router-dom
+    react-router-native - mobile applications - native
+
+    react-router-dom - web
+
+    <BrowserRouter> or <HashRouter>
+-> created new react application naming 'cricket-routing-app'
+-> Made use of react-router-dom for navigation(SPA) in between 'Home', 'Cricketers' and 'Schedule' components
+-> Made RESTFul Service call with fetch API in 'hello-react-app' application
+-> Also created custom hook named 'useFetch' using 'useEffect' hook to call the RESTFul API
+-> EventEmitter example in 'Demo_EventEmitter' folder

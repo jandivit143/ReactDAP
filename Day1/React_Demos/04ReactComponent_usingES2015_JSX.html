@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.development.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.22.14/babel.min.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <!-- <div id="newContainer"></div>
+    <div id="myContainer"></div> -->
+    <script type="text/babel">
+        // Create a React Component
+        class Hello extends React.Component{
+            render(){
+                // JSX - Javascript Syntax Extension
+                return <h1 id='hOne'>Hi Abhijith - using ES2015 & JSX!</h1>;
+            }
+        }
+
+        class ItemsList extends React.Component{
+            render(){
+                return <ul>
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Contact Us</li>
+                        </ul>
+            }
+        }
+
+        // ReactDOM.render(<Hello />,document.getElementById('container'));
+
+        const root = ReactDOM.createRoot(document.getElementById('container'));
+        root.render(
+            // use div tag if we have to render more than one component
+            <div>
+                <Hello />
+                <ItemsList />
+            </div>
+        );
+    </script>
+</body>
+</html>

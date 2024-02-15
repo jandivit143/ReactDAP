@@ -1,0 +1,45 @@
+on day 7:
+-> Jest for testing purpose in react
+-> Redux
+
+	Javascript
+		qUnit - .js jQuery, jQuery UI, jQuery Mobile
+		mocha and chai - .js node.js
+		jasmine - tool - karma - .js Angular - google
+		jest - .js React - facebook
+-> we need 'jest' as dev dependencies as it is used for testing purpose in development phase, run the cmd
+   npm i jest -D
+-> created some test cases using jest, check files 'sum.js', 'sum.test.js' and 'test.js'
+-> to run test cases with jest, first we need to change 'test' value to 'jest' in package.json file and
+   then run the cmd 'npm test' from '01simple_js_jest' folder opened in cmd prompt
+-> After testing normal .js files with jest, created a new react project named '02demo_domtesting_reactcomp'
+   for testing DOM with jest
+-> Redux
+	MVC
+	MVC in java			Spring
+	MVC in .Net			Asp.net MVC
+	MVC in Node			Express
+
+	FLUX - facebook flux / Redux
+
+	Redux is the popular implementation of FLUX architecture pattern
+	Redux is little different than FLUX
+	Unlike FLUX in Redux we have only one store
+	Single Source of Truth
+	The state of your whole application is stored in an object tree within a single store
+	State is immutable
+	The only way to change the state is to emit an action
+	Changes are made with pure functions - reducers
+-> created new react application named '03demo_redux_toolkit' and install @reduxjs/toolkit using the cmd
+		'npm i @reduxjs/toolkit'
+-> explained on immutability and currying function in '00-immutability.js' file
+-> Implementated redux architecture using 'createSlice' API in '01-basic-redux-setup.js',
+   '02-multiple-reducers.js' file
+-> Made use of middleware in '03-middleware.js' file for logging
+-> Also made use of 'redux-logger' module by installing with the cmd 'npm i redux-logger'
+-> Also seen different way of redux implementation by having store file, counterSlice file and react component
+   named 'counter.jsx' separately
+-> React to Redux Integration possible with the help of another library called as react-redux, so install with
+   the cmd 'npm i react-redux'
+-> We need the 'react-redux' to the whole hierarchy of the application,so go to 'index.js' file and add
+   <Provider store={}></Provider> to the whole application
